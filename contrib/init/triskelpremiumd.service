@@ -1,0 +1,26 @@
+[Unit]
+Description=TriskelPremium's distributed currency daemon
+After=network.target
+
+[Service]
+User=triskelpremium
+Group=triskelpremium
+
+Type=forking
+PIDFile=/var/lib/triskelpremiumd/triskelpremiumd.pid
+
+ExecStart=/usr/bin/triskelpremiumd -daemon -pid=/var/lib/triskelpremiumd/triskelpremiumd.pid \
+          -conf=/etc/triskelpremium/triskelpremium.conf -datadir=/var/lib/triskelpremiumd
+
+ExecStop=-/usr/bin/triskelpremium-cli -conf=/etc/triskelpremium/triskelpremium.conf \
+         -datadir=/var/lib/triskelpremiumd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

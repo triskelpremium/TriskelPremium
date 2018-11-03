@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/triskelpremium_bg.qm</file>
+        <file alias="ca">locale/triskelpremium_ca.qm</file>
+        <file alias="cs">locale/triskelpremium_cs.qm</file>
+        <file alias="da">locale/triskelpremium_da.qm</file>
+        <file alias="de">locale/triskelpremium_de.qm</file>
+        <file alias="en">locale/triskelpremium_en.qm</file>
+        <file alias="en_US">locale/triskelpremium_en_US.qm</file>
+        <file alias="es">locale/triskelpremium_es.qm</file>
+        <file alias="fi">locale/triskelpremium_fi.qm</file>
+        <file alias="fr_FR">locale/triskelpremium_fr_FR.qm</file>
+        <file alias="it">locale/triskelpremium_it.qm</file>
+        <file alias="ja">locale/triskelpremium_ja.qm</file>
+        <file alias="ko_KR">locale/triskelpremium_ko_KR.qm</file>
+        <file alias="nl">locale/triskelpremium_nl.qm</file>
+        <file alias="pl">locale/triskelpremium_pl.qm</file>
+        <file alias="pt">locale/triskelpremium_pt.qm</file>
+        <file alias="pt_BR">locale/triskelpremium_pt_BR.qm</file>
+        <file alias="ro_RO">locale/triskelpremium_ro_RO.qm</file>
+        <file alias="ru">locale/triskelpremium_ru.qm</file>
+        <file alias="sk">locale/triskelpremium_sk.qm</file>
+        <file alias="sv">locale/triskelpremium_sv.qm</file>
+        <file alias="tr">locale/triskelpremium_tr.qm</file>
+        <file alias="uk">locale/triskelpremium_uk.qm</file>
+        <file alias="zh_CN">locale/triskelpremium_zh_CN.qm</file>
+        <file alias="zh_TW">locale/triskelpremium_zh_TW.qm</file>
+    </qresource>
+</RCC>

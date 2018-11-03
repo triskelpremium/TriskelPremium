@@ -1,0 +1,26 @@
+# /etc/conf.d/triskelpremiumd: config file for /etc/init.d/triskelpremiumd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/triskelpremium/triskelpremium.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/triskelpremiumd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/triskelpremiumd.pid"
+
+# Where to write triskelpremiumd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/triskelpremiumd"
+
+# User and group to own triskelpremiumd process
+#BITCOIND_USER="triskelpremium"
+#BITCOIND_GROUP="triskelpremium"
+
+# Path to triskelpremiumd executable
+#BITCOIND_BIN="/usr/bin/triskelpremiumd"
+
+# Nice value to run triskelpremiumd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
