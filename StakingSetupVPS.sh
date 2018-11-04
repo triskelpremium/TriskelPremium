@@ -28,7 +28,7 @@ sudo free
 sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
 cd
 
-wget https://github.com/Triskelpremium/TriskelPremium/releases/download/1.0.0/triskelpremium-1.0.0-x86_64-linux-gnu.tar.gz
+wget https://github.com/triskelpremium/TriskelPremium/releases/download/1.0.0/triskelpremium-1.0.0-x86_64-linux-gnu.tar.gz
 tar -xzf triskelpremium-1.0.0-x86_64-linux-gnu.tar.gz
 
 sudo apt-get install -y ufw

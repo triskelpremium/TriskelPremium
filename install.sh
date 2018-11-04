@@ -83,7 +83,7 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of triskelpremium to install
-TARBALLURL="https://github.com/Triskelpremium/TriskelPremium/releases/download/1.0.0/triskelpremium-1.0.0-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/triskelpremium/TriskelPremium/releases/download/1.0.0/triskelpremium-1.0.0-x86_64-linux-gnu.tar.gz"
 TARBALLNAME="triskelpremium-1.0.0-x86_64-linux-gnu.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""

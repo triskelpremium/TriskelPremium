@@ -54,11 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000084e8a00191029c972d3aa1a66111a09d48d7c95983a6f556a4a82c2438"));
+    (0, uint256("0x00000ce61a8ccc2654749ee097a198caa1f29008147ffa7de15a1f498abc3e23"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1539465075, // * UNIX timestamp of last checkpoint block
+    1541347252, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -93,11 +93,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x53;
-        pchMessageStart[1] = 0xdc;
-        pchMessageStart[2] = 0x12;
-        pchMessageStart[3] = 0xac;
-        vAlertPubKey = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872463b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
+        pchMessageStart[0] = 0x52;
+        pchMessageStart[1] = 0xdd;
+        pchMessageStart[2] = 0x13;
+        pchMessageStart[3] = 0xab;
+        vAlertPubKey = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887545a314dfcba3039401872463b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
         nDefaultPort = 8155;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 1050000;
@@ -121,7 +121,7 @@ public:
 
          */
 
-        const char* pszTimestamp = "I am creating Triskel Premium today - 10/13/2018";
+        const char* pszTimestamp = "I am creating Triskel Premium today - 11/03/2018";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -132,13 +132,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1539465075;
+        genesis.nTime = 1541347252;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21634670;
+        genesis.nNonce = 22817573;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000084e8a00191029c972d3aa1a66111a09d48d7c95983a6f556a4a82c2438"));
-        assert(genesis.hashMerkleRoot == uint256("0xb6bf84b7da187a674d4257e077f8af35c92a77d30089ffb69b02d60ada514761"));
+        assert(hashGenesisBlock == uint256("0x00000ce61a8ccc2654749ee097a198caa1f29008147ffa7de15a1f498abc3e23"));
+        assert(genesis.hashMerkleRoot == uint256("0x833f6451f2a0eb0eb5fb00bf8cf427f1a2fbe4870ceb1ab370ab5cbb98ab5e32"));
 
         // DNS Seeding
         //vSeeds.push_back(CDNSSeedData("", ""));
