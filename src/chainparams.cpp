@@ -54,11 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000ce61a8ccc2654749ee097a198caa1f29008147ffa7de15a1f498abc3e23"));
+    (0, uint256("0x000004edcbab4b0fe253e456619867a548da3effe87be709aa0ef623b497f531"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1541347252, // * UNIX timestamp of last checkpoint block
+    1541366518, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -110,7 +110,7 @@ public:
         nTargetSpacing = 2 * 60;  // TriskelPremium: 1 minute blocks
         nMaturity = 9; // 10 block maturity (+1 elsewhere)
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 21000000 * COIN; // 5 million max supply
+        nMaxMoneyOut = 21000000 * COIN; // 21 million max supply
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
@@ -121,7 +121,7 @@ public:
 
          */
 
-        const char* pszTimestamp = "I am creating Triskel Premium today - 11/03/2018";
+        const char* pszTimestamp = "I am creating Triskel Premium today - 11/04/2018";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -132,13 +132,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1541347252;
+        genesis.nTime = 1541366518;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 22817573;
+        genesis.nNonce = 23390381;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000ce61a8ccc2654749ee097a198caa1f29008147ffa7de15a1f498abc3e23"));
-        assert(genesis.hashMerkleRoot == uint256("0x833f6451f2a0eb0eb5fb00bf8cf427f1a2fbe4870ceb1ab370ab5cbb98ab5e32"));
+        assert(hashGenesisBlock == uint256("0x000004edcbab4b0fe253e456619867a548da3effe87be709aa0ef623b497f531"));
+        assert(genesis.hashMerkleRoot == uint256("0x82b3010f814800307577b59c92358e3db365c9e3130de8a9b7d49a22edc80442"));
 
         // DNS Seeding
         //vSeeds.push_back(CDNSSeedData("", ""));
