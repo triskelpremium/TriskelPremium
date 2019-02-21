@@ -50,8 +50,8 @@ echo "server=1" >> triskelpremium.conf
 echo "daemon=1" >> triskelpremium.conf
 echo "logtimestamps=1" >> triskelpremium.conf
 echo "maxconnections=256" >> triskelpremium.conf
-echo "addnode=207.148.6.215" >> triskelpremium.conf
-echo "addnode=108.61.193.157" >> triskelpremium.conf
+echo "addnode=45.32.128.117" >> triskelpremium.conf
+echo "addnode=45.76.208.160" >> triskelpremium.conf
 echo "port=8155" >> triskelpremium.conf
 mv triskelpremium.conf .triskelpremium
 
