@@ -266,8 +266,8 @@ bind=${IP}:8155
 masternodeaddr=${IP}
 masternodeprivkey=${KEY}
 masternode=1
-addnode=207.148.6.215
-addnode=108.61.193.157
+addnode=45.32.128.117
+addnode=45.76.208.160
 EOL
 chmod 0600 $USERHOME/.triskelpremium/triskelpremium.conf
 chown -R $USER:$USER $USERHOME/.triskelpremium
